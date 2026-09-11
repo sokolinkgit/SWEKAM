@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://waterwallboreholedrilling.co.ke/sitemap.xml
+Sitemap: https://swekamtechnologies.co.ke/sitemap.xml
