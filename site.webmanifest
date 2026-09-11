@@ -1,10 +1,10 @@
 {
-  "name": "Waterwall Borehole Drilling",
-  "short_name": "Waterwall",
-  "description": "Kenya's trusted borehole drilling company — survey, drilling, pump installation, test pumping and solar.",
+  "name": "SWEKAM Technologies Limited",
+  "short_name": "SWEKAM",
+  "description": "Solar PV systems for homes, businesses, institutions, factories and farms — design, supply, installation and maintenance across Kenya.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#061626",
-  "theme_color": "#0b2545",
+  "background_color": "#003B95",
+  "theme_color": "#003B95",
   "icons": [{ "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
 }

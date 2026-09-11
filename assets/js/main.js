@@ -1,5 +1,5 @@
 /* ==========================================================================
-   WATERWALL BOREHOLE DRILLING — main.js
+   SWEKAM TECHNOLOGIES LIMITED — main.js
    Vanilla JS only. No dependencies.
    ========================================================================== */
 (function () {
@@ -7,7 +7,7 @@
 
   const $  = (s, c) => (c || document).querySelector(s);
   const $$ = (s, c) => Array.from((c || document).querySelectorAll(s));
-  const WA_NUMBER = "254705901445";
+  const WA_NUMBER = "254729611356";
 
   /* ------------------------------------------------------------------
      PRELOADER
@@ -186,7 +186,7 @@
      COVERAGE TABS
   ------------------------------------------------------------------ */
   const REGIONS = {
-    nairobi: ["Nairobi", "Karen", "Runda", "Kiambu", "Ruiru", "Thika", "Limuru", "Ongata Rongai", "Kitengela", "Athi River", "Ruaka", "Juja", "Machakos"],
+    nairobi: ["Thika (our base)", "Nairobi", "Karen", "Runda", "Kiambu", "Ruiru", "Limuru", "Ongata Rongai", "Kitengela", "Athi River", "Ruaka", "Juja", "Machakos"],
     central: ["Nyeri", "Murang'a", "Kirinyaga", "Nyandarua", "Karatina", "Othaya", "Kerugoya", "Ol Kalou", "Kangema"],
     rift:    ["Nakuru", "Naivasha", "Gilgil", "Eldoret", "Kericho", "Bomet", "Narok", "Nandi", "Baringo", "Laikipia", "Nanyuki", "Kitale", "Elgeyo Marakwet", "West Pokot", "Kajiado"],
     eastern: ["Machakos", "Makueni", "Kitui", "Embu", "Meru", "Tharaka Nithi", "Isiolo", "Mwingi", "Wote", "Chuka"],
@@ -240,15 +240,18 @@
      GALLERY
   ------------------------------------------------------------------ */
   const GALLERY = [
-    { img: "assets/img/hero-rig.jpg",            cat: "drilling", tag: "Drilling", t: "Truck-mounted rotary rig on site", s: "Kajiado County • 190m borehole",  cls: "gitem--wide gitem--tall" },
-    { img: "assets/img/service-testpumping.jpg", cat: "drilling", tag: "Water Strike", t: "First water — test pumping day",  s: "Makueni County • 240m",           cls: "gitem--wide" },
-    { img: "assets/img/service-survey.jpg",      cat: "survey",   tag: "Survey",   t: "Geophysical resistivity survey",     s: "Nakuru County • VES profiling",   cls: "" },
-    { img: "assets/img/service-drilling.jpg",    cat: "drilling", tag: "Drilling", t: "DTH hammer through basement rock",   s: "Kisii County • 155m",             cls: "" },
-    { img: "assets/img/service-pump.jpg",        cat: "pump",     tag: "Pumps",    t: "Submersible pump installation",      s: "Kiambu County • Grundfos 4in",    cls: "gitem--tall" },
-    { img: "assets/img/service-solar.jpg",       cat: "solar",    tag: "Solar",    t: "Solar-powered pumping array",        s: "Laikipia County • 3.2kW array",   cls: "gitem--wide" },
-    { img: "assets/img/gallery-1.jpg",           cat: "pump",     tag: "Headworks",t: "Completed wellhead & control box",   s: "Murang'a County • Farm supply",   cls: "" },
-    { img: "assets/img/gallery-2.jpg",           cat: "solar",    tag: "Community",t: "School water point & solar tank",    s: "Kakamega County • 600 pupils",    cls: "" },
-    { img: "assets/img/about-team.jpg",          cat: "drilling", tag: "Our Team", t: "The Waterwall field crew",           s: "Countrywide operations",          cls: "" }
+    { img: "assets/img/hero-solar.jpg",     cat: "homes",        tag: "Homes",    t: "8 kWp rooftop array with backup",     s: "Thika, Kiambu • 4 × 5 kWh LiFePO₄", cls: "gitem--wide gitem--tall" },
+    { img: "assets/img/seg-business.jpg",   cat: "business",     tag: "Business", t: "112 kWp on a retail rooftop",         s: "Nairobi • net-metered export",      cls: "gitem--wide" },
+    { img: "assets/img/seg-factories.jpg",  cat: "business",     tag: "Factory",  t: "430 kWp across three shed roofs",     s: "Mombasa Road • three-phase",        cls: "" },
+    { img: "assets/img/gal-battery.jpg",    cat: "homes",        tag: "Inverters",t: "Hybrid inverter and battery room",    s: "Juja • seamless changeover",        cls: "" },
+    { img: "assets/img/service-solar.jpg",  cat: "farms",        tag: "Pumping",  t: "Ground-mount array feeding a dam",    s: "Laikipia • 3.2 kW, no batteries",   cls: "gitem--tall" },
+    { img: "assets/img/svc-install.jpg",    cat: "homes",        tag: "Install",  t: "Panel mounting on box-profile roof",  s: "Ruiru • 2-day install",             cls: "" },
+    { img: "assets/img/gallery-2.jpg",      cat: "institutions", tag: "School",   t: "School water point on solar",         s: "Kakamega • 600 pupils",             cls: "" },
+    { img: "assets/img/seg-farms.jpg",      cat: "farms",        tag: "Irrigation",t: "Solar irrigation pump and header tank",s: "Makueni • 60 acres under drip",   cls: "" },
+    { img: "assets/img/svc-maintenance.jpg",cat: "business",     tag: "Service",  t: "Thermal scan and panel cleaning",     s: "Nakuru • annual O&M contract",      cls: "" },
+    { img: "assets/img/service-survey.jpg", cat: "business",      tag: "Audit",    t: "Load audit and DC testing on site",   s: "Nakuru • 46 kWp plant room",        cls: "" },
+    { img: "assets/img/gallery-1.jpg",      cat: "farms",         tag: "Controls", t: "Pump control panel, dry-run safe",    s: "Murang'a • farm supply",            cls: "" },
+    { img: "assets/img/about-team.jpg",     cat: "institutions", tag: "Our Team", t: "The SWEKAM installation crew",        s: "Countrywide operations",            cls: "" }
   ];
   const gal = $("#gallery");
   if (gal) {
@@ -330,16 +333,13 @@
   /* ------------------------------------------------------------------
      REVIEWS
   ------------------------------------------------------------------ */
-  const AV_COLORS = [
-    "linear-gradient(135deg,#0077b6,#48cae4)", "linear-gradient(135deg,#f6a821,#ffd166)",
-    "linear-gradient(135deg,#1b4f7e,#0096c7)", "linear-gradient(135deg,#2a9d8f,#8ecae6)",
-    "linear-gradient(135deg,#d98a06,#f6a821)", "linear-gradient(135deg,#123a63,#48cae4)"
-  ];
+  // Flat brand swatches only — navy and red, no gradients, no extra hues.
+  const AV_COLORS = ["#003B95", "#F20D16", "#002A6E", "#1E57B8", "#C60A11", "#001B47"];
   const initials = n => n.replace(/^(Dr\.|Rev\.|Mr\.|Mrs\.|Ms\.)\s*/i, "").split(" ").filter(Boolean).slice(0, 2).map(w => w[0]).join("").toUpperCase();
   const starRow = s => `<div class="stars" aria-label="${s} out of 5 stars">` +
     Array.from({ length: 5 }, (_, i) => `<svg class="ico" style="${i < s ? "" : "opacity:.22"}" aria-hidden="true"><use href="#i-star"></use></svg>`).join("") + `</div>`;
 
-  const REVIEWS = window.WATERWALL_REVIEWS || [];
+  const REVIEWS = window.SWEKAM_REVIEWS || [];
   const revGrid = $("#revGrid");
   const revMore = $("#revMore");
   const revLess = $("#revLess");
@@ -451,7 +451,7 @@
 
     if (input.hasAttribute("required") && !v) { setError(field, "This field is required"); return false; }
     if (input.type === "tel" && v && !KE_PHONE.test(v.replace(/[\s-]/g, ""))) {
-      setError(field, "Enter a valid Kenyan number, e.g. 0705 901 445"); return false;
+      setError(field, "Enter a valid Kenyan number, e.g. 0729 611 356"); return false;
     }
     if (input.type === "email" && v && !EMAIL_RE.test(v)) { setError(field, "Enter a valid email address"); return false; }
     if (input.id === "qf-name" || input.id === "q-name") {
@@ -483,7 +483,7 @@
 
       const d = Object.fromEntries(new FormData(quickForm).entries());
       const msg =
-        `Hello Waterwall Borehole Drilling, I would like a callback.\n\n` +
+        `Hello SWEKAM Technologies, I would like a callback about solar.\n\n` +
         `Name: ${d.name}\nPhone: ${d.phone}\nService: ${d.service}\nLocation: ${d.location}`;
 
       const status = $("#quickStatus");
@@ -554,13 +554,15 @@
       const first = String(d.name || "").split(" ")[0];
 
       const msg =
-        `Hello Waterwall Borehole Drilling, I would like a free quote.\n\n` +
-        `Service: ${d.service}\n` +
-        `Purpose: ${d.purpose || "-"}\n` +
+        `Hello SWEKAM Technologies, I would like a free solar quote.\n\n` +
+        `Need: ${d.service}\n` +
+        `Usage: ${d.purpose || "-"}\n` +
+        `Monthly bill: ${billText(d.bill)}\n` +
+        `Indicative size: ${estimate(d.bill).kwp} kWp\n` +
         `County: ${d.county}\n` +
         `Area: ${d.area}\n` +
-        `Timeline: ${d.timeline || "-"}\n` +
-        `Power on site: ${d.power || "-"}\n\n` +
+        `Roof / mount: ${d.roof || "-"}\n` +
+        `Timeline: ${d.timeline || "-"}\n\n` +
         `Name: ${d.name}\nPhone: ${d.phone}\n` +
         (d.email ? `Email: ${d.email}\n` : "") +
         (d.message ? `\nNotes: ${d.message}` : "");
@@ -584,22 +586,56 @@
   }
 
   /* ------------------------------------------------------------------
-     PREFILL QUOTE SERVICE FROM SERVICE-CARD LINKS
+     INDICATIVE SIZER — monthly bill to a rough array size
+     Kenya gets ~115 kWh per kWp per month; 28 KSh/kWh is a working
+     average tariff. This is a conversation starter, never a quotation.
   ------------------------------------------------------------------ */
-  const SERVICE_HINTS = [
-    { match: "survey",   value: "Hydrogeological Survey" },
-    { match: "drilling", value: "Borehole Drilling" },
-    { match: "pricing",  value: "Pump Installation" },
-    { match: "test",     value: "Test Pumping" },
-    { match: "solar",    value: "Solar Installation" },
-    { match: "engineer", value: "Repair / Maintenance" }
-  ];
-  $$('a.link-arrow[href="#quote"], .services__extra a[href="#quote"]').forEach(a => {
+  const TARIFF_KSH = 28;
+  const KWH_PER_KWP_MONTH = 115;
+  const PANEL_W = 550;
+
+  function estimate(bill) {
+    const monthly = Math.max(0, Number(bill) || 0);
+    const kwh = monthly / TARIFF_KSH;
+    const kwp = Math.max(1, Math.round((kwh * 0.7 / KWH_PER_KWP_MONTH) * 10) / 10);
+    return {
+      monthly,
+      kwp,
+      panels: Math.max(2, Math.ceil((kwp * 1000) / PANEL_W)),
+      yearly: Math.round(kwp * KWH_PER_KWP_MONTH * 12),
+      roof: Math.round(kwp * 6),
+      storage: kwp > 8 ? Math.max(10, Math.round(kwp * 2)) : kwp > 3 ? 10 : 5
+    };
+  }
+  const keas = n => Number(n).toLocaleString("en-KE");
+  const billText = b => (b ? `KSh ${keas(Math.round(Number(b)))}` : "-");
+
+  const billInput = $("#q-bill");
+  const billOut = $("#estBill");
+  const estOut = $("#estOut");
+  function paintEstimate() {
+    if (!billInput || !estOut) return;
+    const e = estimate(billInput.value);
+    if (billOut) billOut.textContent = billInput.value >= 400000 ? "KSh 400,000+" : `KSh ${keas(e.monthly)}`;
+    estOut.innerHTML =
+      `<span class="est__pill"><strong>${e.kwp} kWp</strong> array</span>` +
+      `<span class="est__pill">${e.panels} × ${PANEL_W} W panels</span>` +
+      `<span class="est__pill">≈ ${keas(e.yearly)} kWh / year</span>` +
+      `<span class="est__pill">${e.roof} m² of roof</span>` +
+      `<span class="est__pill">backup: ${e.storage} kWh</span>`;
+  }
+  if (billInput) {
+    billInput.addEventListener("input", paintEstimate);
+    paintEstimate();
+  }
+
+  /* ------------------------------------------------------------------
+     PREFILL QUOTE SERVICE FROM data-prefill ON ANY "FREE QUOTE" LINK
+  ------------------------------------------------------------------ */
+  $$('a[href="#quote"][data-prefill]').forEach(a => {
     a.addEventListener("click", () => {
-      const txt = a.textContent.toLowerCase();
-      const hit = SERVICE_HINTS.find(h => txt.includes(h.match));
-      if (!hit) return;
-      const radio = $(`input[name="service"][value="${hit.value}"]`);
+      const value = a.dataset.prefill;
+      const radio = $(`input[name="service"][value="${value}"]`);
       if (radio) { radio.checked = true; radio.dispatchEvent(new Event("change", { bubbles: true })); }
     });
   });

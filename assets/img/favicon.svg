@@ -1,9 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#48cae4"/><stop offset="100%" stop-color="#0077b6"/>
-  </linearGradient></defs>
-  <rect width="64" height="64" rx="14" fill="#061626"/>
-  <path d="M32 8 C32 8 52 33 52 46 A20 20 0 0 1 12 46 C12 33 32 8 32 8 Z" fill="url(#g)"/>
-  <rect x="30" y="22" width="4.5" height="26" rx="2" fill="#fff" opacity=".92"/>
-  <path d="M32.2 50 l-5.5-7 h11 z" fill="#f6a821"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SWEKAM Technologies Limited — solar PV">
+  <rect width="64" height="64" rx="14" fill="#003B95"/>
+  <g stroke="#F20D16" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M32 8v5M15 13l3.4 3.6M8 30h5M51 30h5M49 13l-3.4 3.6"/>
+  </g>
+  <circle cx="32" cy="24" r="8" fill="#FFFFFF"/>
+  <path d="M13 38h38l5 17H8Z" fill="#FFFFFF"/>
+  <g stroke="#003B95" stroke-width="2.8" fill="none" stroke-linecap="round">
+    <path d="M11 47h42M26 38.5 23.5 54.5M38 38.5 40.5 54.5"/>
+  </g>
 </svg>
