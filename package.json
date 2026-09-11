@@ -1,0 +1,13 @@
+{
+  "name": "waterwall-borehole-drilling",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static Waterwall website with optional browser regression tests.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

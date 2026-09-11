@@ -1,0 +1,10 @@
+{
+  "name": "Waterwall Borehole Drilling",
+  "short_name": "Waterwall",
+  "description": "Kenya's trusted borehole drilling company — survey, drilling, pump installation, test pumping and solar.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#061626",
+  "theme_color": "#0b2545",
+  "icons": [{ "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
