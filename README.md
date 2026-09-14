@@ -10,10 +10,10 @@ JavaScript only** — no frameworks, no build step, no runtime dependencies.
 | | |
 |---|---|
 | **Name** | SWEKAM Technologies Limited |
-| **Address** | Sawai Apartments, OAU Road, Sec. 9 · P.O. Box 5079, 01002, Thika |
+| **Address** | 3rd Floor, Highway Mall, Uhuru Highway · P.O. Box 5079, 00100, Nairobi |
 | **Phone / WhatsApp** | 0729 611 356 (`+254 729 611 356`) |
 | **Email** | swekamtechnologies@gmai.com |
-| **Service area** | Kenya — all 47 counties, mobilising from Thika |
+| **Service area** | Kenya — all 47 counties, mobilising from Nairobi |
 | **Services** | Solar PV Design · Supply · Installation · Maintenance |
 | **Segments** | Homes · Businesses · Institutions · Factories · Farms |
 | **Logo artwork** | `assets/logoswekam.jpeg` (supplied original, never redrawn) |
@@ -73,7 +73,7 @@ Nothing needs compiling.
 - **Forms hand off to WhatsApp** — on submit, details are formatted into a pre-filled message so
   no lead is lost to an unmonitored inbox.
 - **Trust stack** — animated counters (systems, kWp commissioned, counties, years, uptime),
-  25-year panel / 5-year workmanship warranty figures, 30 reviews averaging 4.9.
+  25-year panel / 5-year workmanship warranty figures, 33 reviews averaging 4.9.
 - **Objection handling** — a 10-question FAQ covering cost, real savings, batteries, net
   metering, DB boards, lifespans, roof suitability, motor loads, cloudy days and payment terms.
 - **Contact plate** — physical address, P.O. Box, opening hours and a "Get directions" link in
@@ -113,7 +113,7 @@ Page navigation lives in the floating Dashboard. `#contact` links lead to the fo
 index.html              markup, SVG icon sprite, JSON-LD
 assets/css/style.css    flat palette tokens + all styling and responsive rules
 assets/js/main.js       nav, reveals, counters, tabs, gallery, lightbox, reviews, sizer, forms
-assets/js/reviews.js    the 30 review records (edit here to change reviews)
+assets/js/reviews.js    the 33 review records (edit here to change reviews)
 assets/logoswekam.jpeg  supplied logo artwork
 assets/img/             logo exports, photography, favicon
 robots.txt · sitemap.xml · site.webmanifest
@@ -167,8 +167,11 @@ are git-ignored.
    0729 611 356 were assumed — adjust in the topbar, footer and JSON-LD.
 4. **Trust numbers are illustrative**: 920+ systems, 5,200 kWp, 47 counties, 12+ years, 99%
    still-running, the 25-year/5-year warranty wording, the 48-hour quote turnaround and the
-   4.9/30 review score. Swap them for figures you can evidence, and replace the 30 reviews with
-   real client feedback — publishing invented testimonials is a legal risk, not just a poor look.
+   4.9/33 review score. Swap them for figures you can evidence, and replace the placeholder reviews
+   with real client feedback — publishing invented testimonials is a legal risk, not just a poor
+   look. The three Garissa jobs now leading the list (Oasis Hotel 70 kVA hybrid, Tinaas Primary
+   School 5 kVA off-grid, Deputy County Commissioner's residence Modogashe 5 kVA) were supplied by
+   SWEKAM; the other 30 are still illustrative and need the same treatment.
 5. **Photography** in `assets/img/` is AI-generated placeholder imagery. Replace with real photos
    of SWEKAM's own crews, panels and completed sites (same filenames, roughly 1400×770 for the
    hero, 1400×770 or 800×600 elsewhere); project photos convert markedly better than stock.

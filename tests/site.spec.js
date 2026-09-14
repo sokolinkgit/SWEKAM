@@ -54,7 +54,7 @@ test('solar brand, slogan, statistics and stars replace the drilling site', asyn
   await expect(page.locator('.hero__proof .stars')).toHaveAttribute('aria-label', 'Rated 4.9 out of 5');
   await expect(page.locator('.rev-score .stars use')).toHaveCount(5);
   await expect(page.locator('.rev-score__num')).toHaveText('4.9');
-  expect(await page.evaluate(() => window.SWEKAM_REVIEWS.length)).toBe(30);
+  expect(await page.evaluate(() => window.SWEKAM_REVIEWS.length)).toBe(33);
   expect(await page.evaluate(() => document.title)).toContain('SWEKAM Technologies Limited | Solar PV');
 
   const bounds = await page.locator('.navbar__tagline').boundingBox();
@@ -99,7 +99,7 @@ test('removed sections leave the intended order and keep footer contacts', async
   await expect(page.locator('main + footer')).toHaveCount(1);
   await expect(page.locator('footer #contact a[href="tel:+254729611356"]')).toHaveCount(1);
   await expect(page.locator('footer #contact a[href="mailto:swekamtechnologies@gmai.com"]')).toHaveCount(1);
-  await expect(page.locator('footer #contact')).toContainText('Sawai Apartments, OAU Road');
+  await expect(page.locator('footer #contact')).toContainText('3rd Floor, Highway Mall, Uhuru Highway');
   await expect(page.locator('footer #contact')).toContainText('P.O. Box 5079');
 });
 
@@ -314,7 +314,7 @@ test('every region is visible without horizontal scrolling and selects its count
   await expect(tabs.getByRole('tab')).toHaveCount(7);
   expect(await tabs.evaluate(el => el.scrollWidth - el.clientWidth)).toBeLessThanOrEqual(1);
   const bounds = await tabs.boundingBox();
-  const regions = { nairobi: 'Thika (our base)', central: 'Nyeri', rift: 'Nakuru', eastern: 'Machakos', coast: 'Mombasa', western: 'Kisumu', north: 'Garissa' };
+  const regions = { nairobi: 'Nairobi (our base)', central: 'Nyeri', rift: 'Nakuru', eastern: 'Machakos', coast: 'Mombasa', western: 'Kisumu', north: 'Garissa' };
   for (const [region, place] of Object.entries(regions)) {
     const tab = page.locator(`#region-${region}`);
     const box = await tab.boundingBox();
