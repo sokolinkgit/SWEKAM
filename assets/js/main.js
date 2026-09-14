@@ -186,7 +186,7 @@
      COVERAGE TABS
   ------------------------------------------------------------------ */
   const REGIONS = {
-    nairobi: ["Thika (our base)", "Nairobi", "Karen", "Runda", "Kiambu", "Ruiru", "Limuru", "Ongata Rongai", "Kitengela", "Athi River", "Ruaka", "Juja", "Machakos"],
+    nairobi: ["Nairobi (our base)", "Thika", "Karen", "Runda", "Kiambu", "Ruiru", "Limuru", "Ongata Rongai", "Kitengela", "Athi River", "Ruaka", "Juja", "Machakos"],
     central: ["Nyeri", "Murang'a", "Kirinyaga", "Nyandarua", "Karatina", "Othaya", "Kerugoya", "Ol Kalou", "Kangema"],
     rift:    ["Nakuru", "Naivasha", "Gilgil", "Eldoret", "Kericho", "Bomet", "Narok", "Nandi", "Baringo", "Laikipia", "Nanyuki", "Kitale", "Elgeyo Marakwet", "West Pokot", "Kajiado"],
     eastern: ["Machakos", "Makueni", "Kitui", "Embu", "Meru", "Tharaka Nithi", "Isiolo", "Mwingi", "Wote", "Chuka"],
