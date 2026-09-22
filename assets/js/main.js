@@ -7,7 +7,7 @@
 
   const $  = (s, c) => (c || document).querySelector(s);
   const $$ = (s, c) => Array.from((c || document).querySelectorAll(s));
-  const WA_NUMBER = "254729611356";
+  const WA_NUMBER = "254729611386";
 
   /* ------------------------------------------------------------------
      PRELOADER
@@ -451,7 +451,7 @@
 
     if (input.hasAttribute("required") && !v) { setError(field, "This field is required"); return false; }
     if (input.type === "tel" && v && !KE_PHONE.test(v.replace(/[\s-]/g, ""))) {
-      setError(field, "Enter a valid Kenyan number, e.g. 0729 611 356"); return false;
+      setError(field, "Enter a valid Kenyan number, e.g. 0729 611 386"); return false;
     }
     if (input.type === "email" && v && !EMAIL_RE.test(v)) { setError(field, "Enter a valid email address"); return false; }
     if (input.id === "qf-name" || input.id === "q-name") {

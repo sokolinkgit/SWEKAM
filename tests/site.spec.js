@@ -97,7 +97,7 @@ test('removed sections leave the intended order and keep footer contacts', async
   await expect(page.locator('#reviews + #faq')).toHaveCount(1);
   await expect(page.locator('main > section:last-child')).toHaveAttribute('id', 'quote');
   await expect(page.locator('main + footer')).toHaveCount(1);
-  await expect(page.locator('footer #contact a[href="tel:+254729611356"]')).toHaveCount(1);
+  await expect(page.locator('footer #contact a[href="tel:+254729611386"]')).toHaveCount(1);
   await expect(page.locator('footer #contact a[href="mailto:swekamtechnologies@gmai.com"]')).toHaveCount(1);
   await expect(page.locator('footer #contact')).toContainText('3rd Floor, Highway Mall, Uhuru Highway');
   await expect(page.locator('footer #contact')).toContainText('P.O. Box 5079');
@@ -140,7 +140,7 @@ test('only the three requested actions float, with Dashboard above WhatsApp', as
   expect(await page.locator('.fab').evaluateAll(elements => elements.map(el => getComputedStyle(el).position))).toEqual(['fixed', 'fixed', 'fixed']);
 
   const whatsappURL = new URL(await page.locator('.fab--wa').getAttribute('href'));
-  expect(whatsappURL.origin + whatsappURL.pathname).toBe('https://wa.me/254729611356');
+  expect(whatsappURL.origin + whatsappURL.pathname).toBe('https://wa.me/254729611386');
   await expect(page.locator('.fab--wa')).toHaveAttribute('target', '_blank');
   await expect(page.locator('.fab--wa')).toHaveAttribute('rel', 'noopener');
   await page.locator('#toTop').click();
@@ -243,7 +243,7 @@ test('expanded callback still validates and prepares the WhatsApp handoff', asyn
   const urls = await page.evaluate(() => window.openedURLs);
   expect(urls).toHaveLength(1);
   const url = new URL(urls[0]);
-  expect(url.origin + url.pathname).toBe('https://wa.me/254729611356');
+  expect(url.origin + url.pathname).toBe('https://wa.me/254729611386');
   expect(url.searchParams.get('text')).toContain('Name: Test Customer');
   expect(url.searchParams.get('text')).toContain('Service: Home Solar System');
   expect(url.searchParams.get('text')).toContain('Location: Thika, Kiambu');
