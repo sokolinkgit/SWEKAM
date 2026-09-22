@@ -11,7 +11,7 @@ JavaScript only** — no frameworks, no build step, no runtime dependencies.
 |---|---|
 | **Name** | SWEKAM Technologies Limited |
 | **Address** | 3rd Floor, Highway Mall, Uhuru Highway · P.O. Box 5079, 00100, Nairobi |
-| **Phone / WhatsApp** | 0729 611 356 (`+254 729 611 356`) |
+| **Phone / WhatsApp** | 0729 611 386 (`+254 729 611 386`) |
 | **Email** | swekamtechnologies@gmai.com |
 | **Service area** | Kenya — all 47 counties, mobilising from Nairobi |
 | **Services** | Solar PV Design · Supply · Installation · Maintenance |
@@ -164,7 +164,7 @@ are git-ignored.
    JSON-LD, `robots.txt` and `sitemap.xml` URLs. Replace with the real domain before launch, or
    remove the canonical/OG URL lines.
 3. **Opening hours** (Mon–Fri 8:00–18:00, Sat 9:00–13:00) and the **WhatsApp** availability on
-   0729 611 356 were assumed — adjust in the topbar, footer and JSON-LD.
+   0729 611 386 were assumed — adjust in the topbar, footer and JSON-LD.
 4. **Trust numbers are illustrative**: 920+ systems, 5,200 kWp, 47 counties, 12+ years, 99%
    still-running, the 25-year/5-year warranty wording, the 48-hour quote turnaround and the
    4.9/33 review score. Swap them for figures you can evidence, and replace the placeholder reviews
